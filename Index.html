@@ -9,31 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div class="topnav" id="myTopnav">
+            <a href="#home" class="#"><img src="Billeder og logo/Hidesh logo_1.png" class="navlogo"></a>
             <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#omMig">Om mig</a>
+            <a href="#projekter">Projekter</a>
+            <a href="#kontakt">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+              <i class="fa fa-bars"></i>
             </a>
           </div>
     </header>
         <section>
+            <id id="home"></id>
                 <img src="Billeder og logo/hidesh.jpg" class="headimage" alt="Billede af Hidesh">
-            <h1>Hejsa!</h1>
-                <div class="center">
-                    <h2> Hidesh Kumar. 
-                        <br>Multimediedesigner
-                        <br>Musik-producer
-                        <br>Frontend udvikler</h2>
-                </div>    
-        
+                    <h1>Hejsa!</h1>
+                        <div class="center">
+                            <h2> Hidesh Kumar 
+                                <br>Multimediedesigner
+                                <br>Musik-producer
+                                <br>Frontend udvikler</h2>
+                        </div>    
         </section>
         <section>
+            <id id="omMig"></id>
             <div class="center">
                 <div class="textbox">
                     <h3>Om mig</h3>
@@ -42,17 +45,18 @@
                         <br>Jeg er en ung mand på 21, der altid har haft en stor interesse for alt it og elektronik. <br>
                             Derudover har jeg har en hobby/deltidsinteresse som musik-producer.
                             Jeg har igennem mit liv stiftet erfaring med programmer og kodesprog som Adobe premiere pro, Adobe XD, HTML, CSS og meget mere.</h4>
-                </div>
-                    <a href="#kontakt" class="button1">Kontakt mig</a>
+                </div>   
             </div> 
+            <a href="#kontakt" class="button1">Kontakt mig</a>
         </section>
 
         <!--Projekter-->
         <section>
+            <id id="projekter"></id>
             <div class="center">
                 <div class="textbox">
                     <h3>Projekter</h3>
-                    <h5>Her kan man finde tidligere projekter jeg har arbejdet, blandt andet mit musik, kodening og samt video!</h5>
+                    <h5>Se mine tidligere projekter jeg har arbejdet på, blandt andet mit musik, kodening og en video!</h5>
                 </div>
             </div>
                 <img src="Billeder og logo/Icon feather-code.png" alt="CodeLogo" class="logo">
@@ -61,6 +65,7 @@
                 <div class="containerbox">
                     <h6>Seneste</h6>
                     <img src="Billeder og logo\HobbiHub.png" alt="Hobbihub" class="imageBox">
+                        <h5>Se mine hjemmeside projekter som jeg har været med til at udvikle på! Tryk på "Se mere" for mere information.</h5>
                     <a href="projekt.html" class="button2">Se mere</a>
                 </div>
         <!--Musik projekter-->
@@ -72,6 +77,7 @@
                 <div class="containerbox">
                     <h6>Seneste</h6>
                     <img src="Billeder og logo/image1_2.png" alt="Hobbihub" class="screenshot">
+                        <h5>Se mine musikprojekter som jeg har produceret eller synget på! Tryk på "Se mere" for mere information.</h5>
                     <a href="projekt.html" class="button2">Se mere</a>
                 </div>
         <!--Musik projekter-->
@@ -83,7 +89,7 @@
                 <div class="containerbox">
                     <h6>Seneste</h6>
                     <img src="Billeder og logo\HTT.png" alt="Hobbihub" class="imageBox">
-                        <h5>Se videoprojekter som jeg har medvirkert i eller redigeret! Tryk på "Se mere" for mere information.</h5>
+                        <h5>Se videoprojekter som jeg er medvirkende i og har redigeret! Tryk på "Se mere" for mere information.</h5>
                     <a href="projekt.html" class="button2">Se mere</a>
                 </div>
             </div>
@@ -144,12 +150,12 @@
 
     <!-- JS til navbar-->
     <script>
-        function myFunction(){
-            var x = document.getElementsByID("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " repsonsive";
-            } else {
-                x.className = "topnav";
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
             }
         }
     </script>
