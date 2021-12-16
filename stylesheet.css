@@ -6,44 +6,46 @@ body {
   h1 {
       -webkit-text-stroke: 0.2px black; 
       color: #faca23;
-      font-family: slice;
-      font-size: 2.5rem;
+      font-family: sliceX;
+      font-size: 4rem;
       text-align: center;
   }
 
   h2 {
       color: black;
-      font-family: Arial Rounded MT Bold;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 400;
       text-align: center;
-      font-size: 2.3rem;
+      font-size: 1.5rem;
   }
 
   h3{
-      font-family: NexaXBold;
+      font-family: nexaboldX;
       font-size: 1.9rem;
       src: local('NexaXBold');
       text-align: center;
+      padding-top: 22% ;
   }
 
   h4{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: initial;
   }
 
   h5{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Roboto Mono', monospace; font-size: 1.1rem;
     text-align: center;
   }
 
   h6{
-    font-family: NexaXBold;
+    font-family: nexaboldX;
     font-size: 1.9rem;
     margin-top: auto;
     margin-bottom: auto;
     src: local('NexaXbold');
     text-align: center;
+    margin-top: 1em;
   }
 
   h7{
@@ -51,6 +53,8 @@ body {
     font-size: 1.1rem;
     text-align: justify;
   }
+
+
 
   .musictext{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -71,11 +75,13 @@ body {
   }
 
   .headimage{
-      display: inline-flex;
-      border-radius: 10em;
-      width: 20rem;
-      height: 20rem;
-      margin-top: 30px;
+    max-width: 70%;
+    max-height: 100%;
+    border-radius: 10em;
+    text-align:center;
+    display:block;
+    margin:auto;
+    margin-top: 30px;
   }
 
   a.button1{
@@ -135,14 +141,14 @@ body {
     height: auto;
     width: 100%;
     display: inline-flex;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
   }
 
   .screenshot{
     height: 50%;
     width: 50%;
     display: flex;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     margin: auto;
   }
 
@@ -257,6 +263,20 @@ input[type=submit]:hover {
     border: transparent;
   }
   
+  @font-face {
+      font-family: nexaboldX;
+      src: url(fonts/NexaXBold.otf);
+  }
+
+  @font-face {
+      font-family: urbanRetro;
+      src: url(fonts/UrbanRetro.ttf);
+  }
+  
+  @font-face {
+      font-family: sliceX;
+      src: url(fonts/slice.ttf);
+  }
 
   
   @media screen and (min-width: 600px) {
