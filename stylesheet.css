@@ -96,6 +96,13 @@ body {
     display: block;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 0.5em;
+  }
+
   .container{
     margin: auto;
     padding-top: 5%;
@@ -123,6 +130,38 @@ body {
     padding-bottom: 15%;
     margin: auto;
   }
+
+/* kontakt form */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#faca23 ;
+  color: black;
+  padding: 1em 3em;
+  border: 0.2em solid black;
+  border-radius: 2em;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
 
   /* navbar */
   .topnav {
@@ -153,6 +192,33 @@ body {
   .topnav .icon {
     display: none;
   }
+
+
+  /* Footer */
+  footer {
+  background-color: black;
+  bottom: 0;
+  border-top: 0.25em solid #faca23;
+  width: 100%;
+  height: 100%;
+  border-radius: 200px 200px 0 0;
+  }
+
+  .footer-text{
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+    color: #faca23;
+  }
+
+  footer .instagram,.linkedIn,.github {
+    float: center;
+    display: block;
+    margin: auto;
+  }
+
+
+
   
   @media screen and (min-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
