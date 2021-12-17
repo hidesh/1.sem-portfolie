@@ -123,6 +123,9 @@ body {
     padding-bottom: 2rem;
   }
 
+  .buttonlogo{
+      margin: auto
+  }
 
   .grid-containerbox {
     display: grid;
@@ -145,9 +148,10 @@ body {
 
   .imageBox{
     height: auto;
-    width: 100%;
-    display: inline-flex;
+    max-width: 100%;
+    display: block;
     padding-bottom: 5%;
+    margin: auto;
   }
 
   .screenshot{
@@ -188,7 +192,7 @@ body {
     grid-gap: 1rem;
 }
 
-.cardsproject {
+.cardsproject{
     max-width: 100%;
     margin: 0 auto;
     display: grid;
@@ -243,7 +247,7 @@ input[type=submit]:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   /* Change the color of links on hover */
@@ -342,7 +346,11 @@ input[type=submit]:hover {
 
       .cardsproject{
         grid-template-columns: repeat(2, 1fr);
-      
+      }
+
+      .topnav a {
+        font-size: 1.5rem;
+      }
   }
 
 
@@ -368,4 +376,39 @@ input[type=submit]:hover {
       text-align: left;
     }
   }
+
+
+@media screen and (min-width: 1300px) {
+
+
+    h5{
+        font-size: 2rem;
+    }
+
+    h4{
+        font-size: 2rem ;
+    }
+
+    h3{
+        font-size: 3.8rem;
+        padding-top: 14%;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    h1{
+        font-size: 6rem;
+    }
+
+    h7{
+        font-size: 2rem;
+    }
+
+    .buttonlogo{
+        width: 200px;
+        height: 200px;
+    }
+
 }

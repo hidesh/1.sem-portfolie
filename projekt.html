@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekter</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="Index.html#home" class="#"><img src="Billeder og logo/Hidesh logo_1.png" class="navlogo"></a>
+            <a href="Index.html#home" class="active">Home</a>
+            <a href="Index.html#omMig">Om mig</a>
+            <a href="projekt.html#projekter">Projekter</a>
+            <a href="Index.html#kontakt">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+              <i class="fa fa-bars"></i>
             </a>
           </div>
     </header>
@@ -26,23 +31,23 @@
                 </div>    
             <div class="grid-containerbox">    
                 <a href="#kode">  
-                <img src="Billeder og logo\CodeButton.png" alt="CodeButton">
+                <img src="Billeder og logo\CodeButton.png" alt="CodeButton" class="buttonlogo">
                 </a> 
                 <a href="#musik">  
-                    <img src="Billeder og logo\MusicButton.png" alt="MusicButton">
+                    <img src="Billeder og logo\MusicButton.png" alt="MusicButton" class="buttonlogo">
                     </a>
                 <a href="#video">  
-                    <img src="Billeder og logo\VideoButton.png" alt="VideoButton">
+                    <img src="Billeder og logo\VideoButton.png" alt="VideoButton" class="buttonlogo">
                 </a> 
             </div>
         </section>
 
         <section>
-            <id id="kode">
-                  <!--Kode projekter-->
-            <div class="cards">    
+        <!--Kode projekter-->
+        <id id="kode"> 
+        <img src="Billeder og logo/Icon feather-code.png" alt="CodeLogo" class="logo" style="padding-top: 3em;">
+        <div class="cardsproject">
             <div class="container"> 
-                <img src="Billeder og logo/Icon feather-code.png" alt="CodeLogo" class="logo" style="padding-top: 3em;">
                 <div class="textbox">
                     <h6>HobbiHub</h6>
                     <img src="Billeder og logo\HobbiHub.png" alt="Hobbihub" class="imageBox">
@@ -50,7 +55,10 @@
                         Kortere sagt var HobbiHub en platform hvor individuelle mennesker kan købe eller sælge arbejdskraft. 
                         I dette projekt arbejdet jeg med både HTML og CSS, og udvikling af dens udforsk page.</h7>
                     <a href="projekt.html" class="button2">Se Projekt</a>
-                        <br>
+                    </div>
+            </div>        
+            <div class="container">        
+                <div class="textbox">    
                     <h6>Dans, dans og dans</h6>
                     <img src="Billeder og logo\BDS_logo_cf@2x.png" alt="Hobbihub" class="imageBox">
                     <h7>Under forløbet Dans, dans og dans, arbejdede vi på projektet Bollywood Dance studio. 
@@ -59,15 +67,15 @@
                     <a href="projekt.html" class="button2">Se Projekt</a>
                         <br>
                 </div>
-            </id>
+            </div>
         </div>
         </section>
 
         <section>
-            <div class="cardsproject">
+            <id id="musik">
+            <img src="Billeder og logo\Icon awesome-music.png" alt="musicLogo" class="logo" style="padding-top: 3em; padding-bottom: 3em;">
+        <div class="cardsproject">   
             <div class="container">
-                <id id="musik">
-                <img src="Billeder og logo\Icon awesome-music.png" alt="musicLogo" class="logo" style="padding-top: 3em; padding-bottom: 3em;">
                 <div class="textbox">
                     <h6>Calvin Klein</h6>
                     <div class="musictext">feat. JoE, Hidi & Kala Jatt</div>
@@ -79,8 +87,11 @@
                     <h7>Her er et udkast fra et musikprojekt, jeg har gang i. 
                         Det kommer af min hobby som producer. Selve produktion opereres i mit studie, som jeg har med en partner. 
                         Den sang er bare et udkast og derfor kun til underholdning.</h7>
-                        
-                        <h6 style="padding-top: 2em;">Raneem - Daydream</h6>
+                </div>
+            </div>      
+            <div class="container">
+                <div class="textbox">
+                        <h6 style="padding-top: 0.5em;">Raneem - Daydream</h6>
                         <div class="musictext">Cover af Tory Kelly - Daydream</div>
                         <img src="Billeder og logo\sound.gif" alt="audio" class="audioimage">
                             <br>
@@ -98,7 +109,7 @@
         <section>
             <id id="video">
                     <img src="Billeder og logo\Icon awesome-video.png" alt="VideoLogo" class="logo" style="padding-top: 3em; padding-bottom: 3em;">
-                    <div class="cardsproject">
+                <div class="container">
                     <div class="textbox">
                         <h6 >How to tinder🔥</h6>
                         <img style="padding-top: 2em;" src="Billeder og logo\HTT.png" alt="imagevideo" class="imageBox">
@@ -108,7 +119,7 @@
                         </h7>
                         <a href="projekt.html" class="button2">Se videoen</a>
                     </div>
-                </div>
+                </div>    
             </id>
         </section>
        
@@ -140,12 +151,12 @@
 
     <!-- JS til navbar-->
     <script>
-        function myFunction(){
-            var x = document.getElementsByID("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " repsonsive";
-            } else {
-                x.className = "topnav";
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
             }
         }
     </script>
