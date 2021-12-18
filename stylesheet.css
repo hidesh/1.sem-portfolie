@@ -51,9 +51,9 @@ body {
     margin-top: 1em;
   }
 
-  h7{
+  .h7{
     font-family: 'Roboto Mono', monospace; 
-    font-weight: 100;
+    font-weight: 600;
     text-align: justify;
   }
 
