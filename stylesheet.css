@@ -51,7 +51,7 @@ body {
     margin-top: 1em;
   }
 
-  .h7{
+  #h7{
     font-family: 'Roboto Mono', monospace; 
     font-weight: 600;
     text-align: justify;
@@ -283,11 +283,13 @@ input[type=submit]:hover {
   border-radius: 300px 300px 0 0;
   }
 
-  .footer-text{
+  #footer-text{
     margin: 0;
     margin-top: 15px;
     text-align: center;
     color: #faca23;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
   }
 
   footer .instagram,.linkedIn,.github,.facebook {
@@ -402,7 +404,7 @@ input[type=submit]:hover {
         font-size: 6rem;
     }
 
-    h7{
+    #h7{
         font-size: 2rem;
     }
 
